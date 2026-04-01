@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Resume Analyzer for Job recommendation </title>
+</head>
+<body>
+    <background-color = "red"></background-color>
+    <div class="heading"><h1>Upload Your Resume and analyze it </h1></div>
+    <div class="card">   
+        <form action="/analyze/" method="post" enctype="multipart/form-data" style="text-align: center;">
+            {% csrf_token %}
+            <div class="input-group">
+            <label class="level">Upload Resume</label>
+            <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="button-row">
+            <button type="submit" class="bt1">Analyze the Resume</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

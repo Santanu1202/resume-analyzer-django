@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <div class="heading"> 
+        <h1>Resume Analysis Result</h1>
+    </div>
+    <div class="card">
+       <div class="score-row">
+         <div class="score-text">  
+           <span class="level">ATS Score:</span>
+           <span class="value">{{ score }}%</span>
+         </div>
+         <div class="progress-container">
+           <div class="progress-bar" style="width: {{ score }}%;"></div>
+         </div>
+       </div>
+        <div class="role">
+           <span class="level">Recommended Role: </span>
+           <span class="value">{{ role }}</span>
+        </div>
+        <div class="skills">
+           <span class="level">Skills Present: </span>
+           <span class="value">{{ skills|join:", " }}</span>
+        </div>
+        <div class="missing">
+           <span class="level">Skills Missing: </span>
+           <span class="value">{{ missing|join:", " }}</span>
+        </div>
+        <div class="improvement">
+           <span class="level">Suggestions for Improvement: </span>
+           <span class="value">{{ improvement|join:", " }}</span>
+        </div>
+       
+
+   </div>
+</body>
+</html>

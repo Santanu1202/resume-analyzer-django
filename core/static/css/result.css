@@ -1,0 +1,98 @@
+body{
+    background-color:rgb(220, 215, 215);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.heading{
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    margin-top:20px;
+    color:rgb(40, 37, 91);
+
+
+}
+.card{
+    min-height:auto;
+    width:60%;
+    background-color:rgb(243, 194, 130);
+    border-radius:25px;
+    padding:20px 10px 20px 10px;
+    border:1px solid black;
+    text-align:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+  
+
+
+}
+.score-row{
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+    display:flex;
+    gap:20px;
+    width:100%;
+    padding:0px;
+    margin:20px 0;
+}
+.progress-container{
+    max-width:300px;
+    height:30px;
+    background-color:rgb(40, 39, 91);
+    border:0px solid white;
+    border-radius:25px; 
+    overflow:;
+    flex-grow: 1;
+    margin-top:20px;
+
+
+}
+.progress-bar{
+    height:100%;
+    width:auto;
+    background-color: #a9f6a9;
+    border-radius:25px;
+    padding:0px;
+    
+}
+.score-text{
+    font-size:25px;
+    color: rgb(40, 37, 91);
+   align-items:baseline;
+    margin-top:20px;
+    white-space:nowrap;
+    gap: 8px;
+    
+
+}
+.role, .skills, .missing, .improvement{ 
+    display:flex;
+    flex-direction:row;
+    color: rgb(18, 17, 39);
+    gap:5px;
+    width:100%;
+    align-items:baseline;
+    justify-content:center;
+
+} 
+.value{
+    font-size: 20px;
+    font-weight:lighter;
+    color: rgb(18, 17, 39);
+    margin-bottom: 5px;
+    text-align:left;
+
+}
+.level{
+    font-style: italic;
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(40, 37, 91);
+    margin-bottom: 5px;
+    white-space: nowrap;
+
+}
