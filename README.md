@@ -20,8 +20,8 @@ python manage.py runserver
 ## Screenshots
 
 ### Home Page
-![Home](screenshot/home.png)
+![Home](core/screenshot/home.png)
 
 ### Result Page
-![Result](screenshot/result.png)
+![Result](core/screenshot/result.png)
 
