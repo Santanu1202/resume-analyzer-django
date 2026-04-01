@@ -7,7 +7,6 @@ A web-based ATS system that analyzes resumes and provides:
 - Skill Detection
 - Role Prediction
 - Section Validation
-- Resume History
 
 ## Tech Stack
 - Python
